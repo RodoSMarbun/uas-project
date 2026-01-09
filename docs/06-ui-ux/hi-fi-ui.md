@@ -7,61 +7,40 @@ title: High-Fidelity & Design System
 # High-Fidelity UI & Design System
 
 ## 1. Analisis Warna (Color Palette)
-**Spesifikasi Teks**: Primary Blue (`#0056D2`), Background (`#FFFFFF` & `#F3F4F6`).
 
-### Kondisi Visual (Mobile - Image 1, 2, 3):
-Aplikasi Mobile menggunakan Full Block Blue Background yang sangat dominan. Ini membuat mata cepat lelah dan tidak sesuai dengan spesifikasi Background (Putih bersih/Abu-abu muda).
 
-Kontras teks pada tombol kategori (Image 1 & 3) sudah cukup baik, tetapi background layar yang biru total menabrak prinsip "Clean" dari High-Fidelity.
+### Kondisi Visual Saat Ini
+![Overview Mobile](/img/ui-ux/mobile-home.png)
+*Penggunaan background putih/abu-abu memberikan kesan bersih, profesional, dan mengurangi kelelahan mata pengguna saat berinteraksi lama dengan aplikasi.*
 
-### Kondisi Visual (Web - Image 4):
-Tampilan Web sudah jauh lebih sesuai. Background utama abu-abu muda/putih, dengan aksen biru pada header. Ini terlihat profesional.
 
-> [!WARNING]
-> **Tindakan Perbaikan:**
-> *   **Mobile**: Ubah background halaman Login, Register, dan Home menjadi Putih (`#FFFFFF`) atau Abu-abu sangat muda (`#F3F4F6`). Gunakan warna Biru (`#0056D2`) hanya pada Header (Navbar atas) dan Tombol (Button).
+**Spesifikasi Utama**: 
+- **Primary Blue**: `#0056D2`
+- **Background**: White (`#FFFFFF`) & Light Gray (`#F3F4F6`)
+- **Success Green**: `#22C55E`
+- **Danger Red**: `#EF4444`
+
+---
 
 ## 2. Analisis Tipografi (Typography)
 **Spesifikasi Teks**: Font **Inter** atau **Roboto** (Sans-serif) untuk semua teks.
 
-### Kondisi Visual:
-Pada layar Login & Register (Image 2), tulisan "WBI Library" di bawah logo menggunakan font jenis **Serif** (mirip Times New Roman). Ini tidak konsisten dengan logo "WBI" di atasnya yang Sans-serif, dan melanggar aturan tipografi yang telah ditetapkan.
+### Kondisi Visual Saat Ini
+![Login/Register Typography](/img/ui-ux/mobile-login-register.png)
+*Tipografi Sans-serif (Inter/Roboto) memberikan tingkat keterbacaan yang tinggi dan memperkuat identitas merek yang modern dan edukatif.*
 
-> [!WARNING]
-> **Tindakan Perbaikan:**
-> *   Ganti font "WBI Library" di layar Login/Register menjadi **Inter** atau **Roboto** (Sans-serif) dengan ketebalan Medium atau Semi-Bold.
+---
 
-## 3. Komponen UI & Layout
+## 3. Usability & Konsistensi
 
-### A. Kartu Buku (Book Card)
-**Spesifikasi Teks**: Cover di kiri, Judul di kanan (List view), ada Badge stok, ada tombol "Lihat Detail".
+### Navigasi & Dashboard Admin
+Halaman "Laporan" pada versi Web sudah sangat mendekati spesifikasi. Sidebar di kiri dan konten di kanan menciptakan alur kerja yang profesional.
 
-#### Kondisi Visual (Image 1):
-Tampilan saat ini menggunakan **Grid View** (hanya cover buku berjejer). Tidak ada judul teks di kanan, tidak ada badge stok, dan tidak ada tombol "Lihat Detail".
+### Perbaikan Detail Mobile
+![Search Bar & Navigasi](/img/ui-ux/mobile-search.png)
+*Padding dan proporsi ikon yang seimbang memastikan kenyamanan navigasi dan mencegah kesalahan interaksi pada perangkat mobile.*
 
-> [!WARNING]
-> **Tindakan Perbaikan:**
-> *   Ubah layout "Terbaru" dari Grid menjadi **List View**.
-> *   **Layout**: Gambar kecil di kiri, Judul dan Penulis di kanan, Badge status (Hijau/Merah) di pojok kanan atas kartu, dan tombol outline "Lihat Detail" di bawah judul.
+---
 
-### B. Form Input (Login/Register)
-**Spesifikasi Teks**: Border radius 8px, Border color `#D1D5DB`.
-
-#### Kondisi Visual (Image 2):
-*   Input field terlihat kaku (radius sudut sangat kecil atau 0px).
-*   Label "Email", "Kata Sandi" berada di dalam placeholder (akan hilang saat diketik), padahal deskripsi menyarankan label yang jelas (Medium, 12px).
-
-> [!WARNING]
-> **Tindakan Perbaikan:**
-> *   Pindahkan label ke **atas** kolom input (bukan sebagai placeholder).
-> *   Perbesar **Border Radius menjadi 8px** agar terlihat lebih modern dan ramah (sesuai spesifikasi).
-
-### C. Navigasi & Dashboard Admin
-#### Kondisi Visual (Image 4):
-Halaman "Laporan" sudah terlihat sangat bagus dan paling mendekati spesifikasi. Sidebar di kiri dan konten di kanan.
-
-**Catatan pada Status Badge**: Warna badge pada tabel ("Terlambat", "Sudah Kembali") terlihat menggunakan warna pastel (Pink/Hijau muda). Pastikan kode warnanya disinkronkan dengan palet Success Green (`#22C55E`) dan Danger Red (`#EF4444`) agar konsisten, atau gunakan varian pastel tersebut secara resmi dalam Design System.
-
-## 4. Usability & Konsistensi
-*   **Tombol Navigasi Mobile**: Pada Image 1, ikon navigasi bawah (Home, Search, Menu, Notif) terlihat agak besar dan tidak proporsional dengan area putihnya.
-*   **Search Bar (Image 3)**: Ikon "X" pada search bar terlihat sedikit terpotong atau terlalu mepet ke kanan. Berikan padding yang cukup.
+## Kesimpulan
+Penerapan *Design System High-Fidelity* pada WBI Library fokus pada tiga pilar utama: **Kebersihan Visual**, **Keterbacaan yang Tinggi**, dan **Kemudahan Navigasi**. Dengan standarisasi warna, tipografi, dan layout yang konsisten, aplikasi tidak hanya terlihat lebih modern tetapi juga memberikan pengalaman pengguna yang lebih intuitif dan profesional.
